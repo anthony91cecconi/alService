@@ -1,0 +1,48 @@
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+    <div class="col-auto col-md-3 col-xl-2 px-0" id="sidebar" #sidebar>
+      <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white">
+
+        <div class="no-mobile mb-3">
+          <a href="#" >
+            <img src="FullLogo.png" alt="Logo Aziendale" class="logo img-fluid">
+          </a>
+        </div>
+
+
+        <div class="no-desktop mb-3">
+          <a href="#" class="img-width">
+            <img src="FullLogo-mobile.png" alt="Logo Aziendale" class="logo img-fluid">
+          </a>
+        </div>
+        <ul  class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+          <li class="nav-item">
+            <a [routerLink]="['/home']" routerLinkActive="router-link-active" class="nav-link align-middle px-0" data-bs-toggle="tooltip" data-bs-placement="right" title="Home">
+              <i class="fa-solid fa-house"></i> <span class="no-mobile">Home</span>
+            </a>
+          </li>
+          <li>
+            <a [routerLink]="['/servizi']" routerLinkActive="router-link-active" class="nav-link px-0 align-middle" data-bs-toggle="tooltip" data-bs-placement="right" title="Servizi">
+              <i class="fa-solid fa-people-carry-box"></i> <span class="no-mobile">Servizi</span></a>
+          </li>
+          <li>
+            <a [routerLink]="['/contatti']" routerLinkActive="router-link-active" class="nav-link px-0 align-middle" data-bs-toggle="tooltip" data-bs-placement="right" title="Contatti">
+              <i class="fa-solid fa-address-card"></i> <span class="no-mobile">Contatti</span></a>
+          </li>
+          <li>
+            <a [routerLink]="['/galleria']" routerLinkActive="router-link-active" class="nav-link px-0 align-middle" data-bs-toggle="tooltip" data-bs-placement="right" title="Galleria">
+              <i class="fa-solid fa-image"></i> <span class="no-mobile">Galleria</span> </a>
+          </li>
+          <li>
+            <a [routerLink]="['/chi-siamo']" routerLinkActive="router-link-active" class="nav-link px-0 align-middle" data-bs-toggle="tooltip" data-bs-placement="right" title="Chi Siamo">
+              <i class="fa-solid fa-people-group"></i> <span class="no-mobile">Chi Siamo</span></a>
+          </li>
+        </ul>
+        <hr>
+      </div>
+    </div>
+    <div class="col py-3" id="content" #content>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
