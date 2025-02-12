@@ -1,0 +1,28 @@
+.service-details {
+  padding: 20px;
+}
+
+.header-image {
+  margin-bottom: 20px;
+  overflow: hidden; /* Per gestire immagini più grandi del contenitore */
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.service-description {
+  margin-bottom: 20px;
+}
+
+.image-carousel {
+  margin-bottom: 20px;
+}
+
+.carousel-inner .carousel-item img {
+  max-height: 300px; /* Altezza massima per le immagini nel carosello */
+  object-fit: cover; /* Mantiene le proporzioni e "copre" l'area */
+  cursor: pointer; /* Indica che l'immagine è cliccabile */
+}

@@ -1,0 +1,21 @@
+.gallery {
+  padding: 20px;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Sfondo semi-trasparente per il testo */
+}
+
+/* Stile per limitare le dimensioni delle immagini e centrarle */
+.carousel-inner .carousel-item img {
+  max-height: 500px; /* Altezza massima desiderata */
+  margin: 0 auto; /* Centra l'immagine orizzontalmente */
+  object-fit: cover; /* Mantiene le proporzioni dell'immagine e la adatta al contenitore */
+}
+
+/* Stile per rendere il carosello responsive */
+@media (max-width: 768px) {
+  .carousel-inner .carousel-item img {
+    max-height: 300px; /* Altezza massima per dispositivi mobili */
+  }
+}

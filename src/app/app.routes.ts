@@ -4,6 +4,7 @@ import { ServiziComponent } from './pages/servizi/servizi.component';
 import { ChiSiamoComponent } from './pages/chi-siamo/chi-siamo.component';
 import { GalleriaComponent } from './pages/galleria/galleria.component';
 import { ContattiComponent } from './pages/contatti/contatti.component';
+import { PulizieComponent } from './pages/services/pulizie/pulizie.component';
 
 export const routes: Routes = [
   {
@@ -25,6 +26,10 @@ export const routes: Routes = [
   {
     path: "contatti",
     component: ContattiComponent
+  },
+  {
+    path: "services/pulizie",
+    component:PulizieComponent
   },
   {
     path: "**",
