@@ -6,7 +6,8 @@ import { NavComponent } from './utility/nav/nav.component';
   selector: 'app-root',
   standalone: true,
   imports: [
-    NavComponent
+    NavComponent,
+    RouterOutlet
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

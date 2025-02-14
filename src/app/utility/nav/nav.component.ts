@@ -1,13 +1,12 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { Component, ElementRef, ViewChild, Inject, HostListener } from '@angular/core';
-import { RouterModule, RouterOutlet } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
   imports: [
     RouterModule,
-    RouterOutlet,
     CommonModule
   ],
   templateUrl: './nav.component.html',
