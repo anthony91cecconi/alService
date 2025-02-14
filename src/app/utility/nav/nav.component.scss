@@ -3,8 +3,18 @@
   display: inline-block;
 }
 
+.logo {
+  width: 150px;
+}
+
 .no-desktop {
   display: none;
+}
+
+#content {
+  margin-left: 250px;
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out;
 }
 
 #sidebar {
@@ -39,18 +49,21 @@
     display: inline-block;
   }
 
-
-  #sidebar {
-    width: 60px;
+  .logo {
+    width: 100px;
+    margin-left: 0.5rem;
+    background-color: white;
+    border-radius: 0 50% 50% 0;
   }
 
   #content {
-    margin-left: 60px;
+    margin-left: 0px;
+    padding: 0px;
+    transition: margin-left 0.3s ease-in-out;
   }
 
-  .logo {
-    margin: 0;
-    width: 100%;
+  #sidebar {
+    width: 60px;
   }
 
   #sidebar{
@@ -79,18 +92,8 @@
   text-align: center;
 }
 
-#content {
-  margin-left: 250px;
-  padding: 20px;
-  transition: margin-left 0.3s ease-in-out;
-}
-
 #content.collapsed {
   margin-left: 60px;
-}
-
-.logo {
-  width: 150px;
 }
 
 .img-width{
