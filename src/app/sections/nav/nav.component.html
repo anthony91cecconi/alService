@@ -1,0 +1,31 @@
+<header>
+  <div class="heading" >
+    <div class="logo" >
+
+    </div>
+    <div class="telephone">
+      <div>
+        <span class="call" style="color: red;" >Chiama ora!</span>
+        <br>
+        <span class="call" style="font-size: xx-large; color: green;">349 737 4834</span>
+      </div>
+      <i class="fa-solid fa-mobile-screen phone-none tablet-none" style="font-size: 5rem;"></i>
+    </div>
+  </div>
+  <nav>
+    <ul>
+      <li [class]="isActive('/home')">
+        <a [routerLink]="['/home']">HOME</a>
+      </li>
+      <li [class]="isActive('/servizi')">
+        <a [routerLink]="['/servizi']">SERVIZI</a>
+      </li>
+      <li [class]="isActive('/dove-siamo')">
+        <a [routerLink]="['/dove-siamo']">DOVE <span class="phone-none" >SIAMO</span></a>
+      </li>
+      <li [class]="isActive('/contatti')">
+        <a [routerLink]="['/contatti']">CONTATTI</a>
+      </li>
+    </ul>
+  </nav>
+</header>

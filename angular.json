@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "al-service": {
+    "al.service": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/al-service",
+            "outputPath": "dist/al.service",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "al-service:build:production"
+              "buildTarget": "al.service:build:production"
             },
             "development": {
-              "buildTarget": "al-service:build:development"
+              "buildTarget": "al.service:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -105,6 +105,6 @@
     }
   },
   "cli": {
-    "analytics": "cd42d9a4-be95-4312-9498-7a1a158d8444"
+    "analytics": false
   }
 }
