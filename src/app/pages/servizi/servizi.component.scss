@@ -1,0 +1,125 @@
+header{
+  padding-top: 0.5rem ;
+  padding-bottom: 0.5rem ;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  .bg-immage{
+    background-image: url(https://picsum.photos/200/300);
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.title{
+  text-align: center;
+  h1{
+    font-size: 2rem;
+  }
+}
+
+.services-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      .service-card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        img {
+          width: 100%;
+          max-width: 300px;
+          max-height: 200px;
+          border-radius: 10px;
+        }
+        h3 {
+          font-size: 1.5rem;
+          margin: 10px 0;
+          color: #28a745;
+        }
+        p {
+          color: #555;
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+/* Media query per schermi più piccoli */
+@media (max-width: 900px) {
+  .services-section {
+    .container {
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .services-section {
+    .container {
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+
+.prev {
+  text-align: center;
+  padding: 2rem;
+  h2{
+    margin: 1rem;
+  }
+  .preventive {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    i{
+      font-size: 3rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.middle-dard{
+  border-left: 2px solid var(--fly-color) ;
+  border-right: 2px solid var(--fly-color) ;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+@media (max-width: 900px) {
+  .middle-dard{
+    border: none;
+  }
+  .prev .preventive {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .prev .preventive {
+    grid-template-columns: 1fr;
+  }
+}
