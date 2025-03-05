@@ -1,0 +1,46 @@
+.map-section{
+  text-align: center;
+}
+
+
+.service-areas {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comuni-list {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.comuni-list h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.comuni-list ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.comuni-list li {
+  background: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
